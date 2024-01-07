@@ -3,13 +3,12 @@ export const createStore = (rootReducer, state) => {
   let currentState = state;
 
   const listeners = [];
-  console.log('currentState', currentState);
+  // console.log('currentState', currentState);
   const getState = () => currentState;
   const subscribe = (listener) => listeners.push(listener);
 
   const dispatch = (action) => {
     currentState = reducer(action, currentState)
-    console.log(currentState)
     listeners.forEach(listener => listener())
   }
 

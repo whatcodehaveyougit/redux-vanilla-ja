@@ -1,0 +1,16 @@
+body {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul li {
+  margin-top: 1rem;
+}
+
+body ul li button {
+  margin-left: 2rem;
+}
