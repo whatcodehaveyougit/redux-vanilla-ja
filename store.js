@@ -8,8 +8,8 @@ const rootReducer = (action, state) => {
   switch(type) {
     case "ADD":
       return {
-        // ...state
-        toDoList: [payload]
+        ...state,
+        toDoList: [...state.toDoList, payload]
       }
     default:
       return {
